@@ -101,7 +101,7 @@ body {
       /* Botão hamburguer */
       .hamburguer {
         position:absolute;
-       margin: 14px 0 0 93px;
+       margin: -1070px 0px 90px 110px;
         z-index: 1001;
         cursor: pointer;
         font-size: 28px;
