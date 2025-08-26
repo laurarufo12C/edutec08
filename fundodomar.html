@@ -1,46 +1,213 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Fundo do Mar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fundo do Mar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { height:100%; font-family: 'Inter', sans-serif; color:white; }
+
+
+.background-container {
+  position: relative;
+  width: 100%;
+}
+
+
+.background-container img.fundo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.overlay-rectangle {
+  position: absolute;
+  top: 20px; 
+  left:50%;
+  transform: translateX(-50%);
+  width: 95%;
+  max-width: 1400px;
+  height: calc(100% - 40px); 
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 100%);
+  border-radius: 12px;
+  padding: 50px 40px 70px 40px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  z-index: 10;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+
+.header-content {
+  text-align: center;
+  margin-top: 180px; 
+  margin-bottom: 140px; 
+}
+
+.header-content h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.header-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.header-content p {
+  max-width: 800px;
+  font-size: 1.2rem;
+  opacity: 0.9;
+  line-height: 1.8;
+}
+
+
+.main-content {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  flex: 1;
+}
+
+
+.labels-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 80px;
+}
+
+
+.line-column {
+  position: relative;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.vertical-line {
+  width: 2px;
+  background: white;
+  height: 100%;
+}
+
+
+.animals-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  margin-top: 20px;
+}
+
+.marine-life {
+  display: flex;
+  justify-content: flex-start;
+  gap: 150px; 
+  flex-wrap: wrap;
+}
+
+.marine-life img {
+  width: auto;
+  max-width: 200px; 
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.marine-life img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+
+.animals-column .marine-life:last-child {
+  margin-bottom: 100px; 
+}
+</style>
 </head>
 <body>
-    
-    <div class="overlay">
-        <div class="container">
-            <h1>EXPLORANDO O</h1>
-            <h2>FUNDO DO MAR</h2>
-            <p>À medida que os seres vivos se afastam da superfície, grande parte das suas características se transforma.</p>
-            
-            <div class="depth">
-                <div class="depth-label">200 metros</div>
-                <div class="marine-life">
-                    <img src="fish.png" alt="Peixes">
-                </div>
-                
-                <div class="depth-label">1000 metros</div>
-                <div class="marine-life">
-                    <img src="shark.png" alt="Tubarão">
-                    <img src="octopus.png" alt="Polvo">
-                </div>
-                
-                <div class="depth-label">2000 metros</div>
-                <div class="marine-life">
-                    <img src="deepfish.png" alt="Peixe profundo">
-                    <img src="bluefish.png" alt="Peixe azul">
-                </div>
-                
-                <div class="depth-label">4600 metros</div>
-                <div class="marine-life">
-                    <img src="worm.png" alt="Verme marinho">
-                    <img src="anglerfish.png" alt="Peixe-pescador">
 
-                    <img class="fundomar" src="./imgfundodomar/fundo do mar (1).jpg" alt="">
-                </div>
-            </div>
-        </div>
+<div class="background-container">
+ 
+  <img src="./imgfundodomar/fundo do mar (1).jpg" class="fundo" alt="Fundo do Mar">
+
+
+  <div class="overlay-rectangle">
+
+    
+    <div class="logo">
+      <img src="header.png" alt="Logo do site">
     </div>
+
+    
+    <div class="header-content">
+      <h2>EXPLORANDO O</h2>
+      <h1>FUNDO DO MAR</h1>
+      <p>À medida que mergulhamos nas diferentes camadas do oceano, encontramos animais adaptados a cada nível de profundidade. Cada camada do mar revela formas de vida únicas, mostrando a incrível diversidade do mundo submarino.</p>
+    </div>
+
+    
+    <div class="main-content">
+      <!-- Labels de profundidade -->
+      <div class="labels-column">
+        <div class="depth-label">200m</div>
+        <div class="depth-label">1000m</div>
+        <div class="depth-label">2000m</div>
+        <div class="depth-label">4600m</div>
+      </div>
+
+      
+      <div class="line-column">
+        <div class="vertical-line"></div>
+      </div>
+
+      
+      <div class="animals-column">
+        <div class="marine-life">
+          <img src="./imgfundodomar/peixes-removebg-preview (1) 1 (2).png" alt="Peixes">
+          <img src="./imgfundodomar/tartaruga-removebg-preview (1) 1 (1).png" alt="Tartaruga">
+          <img src="./imgfundodomar/baleia-removebg-preview 1 (1).png" alt="Baleia">
+        </div>
+        <div class="marine-life">
+          <img src="./imgfundodomar/tubarao-removebg-preview 1 (2).png" alt="Tubarão">
+          <img src="./imgfundodomar/lula-removebg-preview 1.png" alt="Lula">
+        </div>
+        <div class="marine-life">
+          <img src="./imgfundodomar/tubarao-charuto-removebg-preview 1.png" alt="Tubarão-charuto">
+          <img src="./imgfundodomar/peixe_vibora-removebg-preview 1.png" alt="Peixe-víbora">
+          <img src="./imgfundodomar/peixes-abissais-removebg-preview 1.png" alt="Peixes-abissais">
+        </div>
+        <div class="marine-life">
+          <img src="./imgfundodomar/verme-removebg-preview 1.png" alt="Verme">
+          <img src="./imgfundodomar/peixeecaracol-removebg-preview 1.png" alt="Peixe-caracol">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

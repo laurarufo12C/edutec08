@@ -101,14 +101,14 @@ body {
       /* Botão hamburguer */
       .hamburguer {
         position:absolute;
-       margin: -1070px 0px 90px 110px;
+       margin: -100px 90px -190px 190px;
         z-index: 1001;
         cursor: pointer;
-        font-size: 28px;
         color: white;
         background: none;
         border: none;
-        
+        width: 130px;
+        font-size: 50px;
 
       }
       
@@ -152,10 +152,15 @@ body {
       .close-btn {
         position: absolute;
         top: 20px;
-        right: 20px;
+        right: 220px;
         font-size: 28px;
         cursor: pointer;
         color: #022c43;
         font-weight: bold;
       }
 
+
+      .home{
+       
+       background-color: blue;
+      }

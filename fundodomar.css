@@ -1,45 +1,168 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-body{
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color:#fff;
+/* Fundo */
+body {
+  font-family: 'Inter', sans-serif;
+  color: white;
+  background: url('./imgfundodomar/fundo\ do\ mar\ \(1\).jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100px;
+  position: relative;
+  line-height: 1.6;
+}
 
-    background-size: cover;
-  }
-  
- 
-  .overlay{
-    padding: 60px 20px;    
-    display:flex;
-    justify-content:center;
-  }
- 
-  .container{
-    width: 100%;
-    max-width: 640px;                
-    background: rgba(0,0,0,0.6);     
-    border-radius: 16px;
-    padding: 32px;
-    text-align: center;
-  }
-  
-  
-  h1{ font-size:36px; margin:0 0 6px; text-transform:uppercase; }
-  h2{ font-size:28px; margin:0 0 20px; color:#fff; }
-  p { font-size:18px; margin:0 0 32px; }
-  
-  
-  .depth{ margin-top: 8px; }
-  .depth-label{ font-size:22px; margin:26px 0 12px; color:#fff; }
-  
-  
-  .marine-life{
-    display:flex; justify-content:center; flex-wrap:wrap; gap:10px;
-  }
-  .marine-life img{
-    width:90px; transition: transform .3s;
-  }
-  .marine-life img:hover{ transform: scale(1.1);
-   }
-  
-  
+/* Retângulo translúcido */
+.overlay-rectangle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  min-height: 2000px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  z-index: 0;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.hamburguer {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  font-size: 28px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Menu lateral */
+.menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: #e0f7fa;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.3);
+  padding-top: 60px;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.menu.active {
+  right: 0;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #022c43;
+  font-size: 18px;
+  display: block;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #022c43;
+  font-weight: bold;
+}
+
+/* Conteúdo principal */
+main {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+main h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+main p {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Linha vertical */
+.depth-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.vertical-line {
+  width: 2px;
+  background: white;
+  margin: 0 auto;
+  height: 1600px;
+}
+
+/* Camadas do mar */
+.layer {
+  margin: 40px 0;
+}
+
+.depth-label {
+  text-align: left;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.marine-life {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.marine-life img {
+  width: 120px;
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.marine-life img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
