@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #0a3d62;
+    color: #000;
+  }
+  
+  .topo {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .golfinho {
+    width: 200px;
+    height: auto;
+  }
+  
+  
+  
+  .mensagem {
+    background-color: #cceeff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+  }
+  
+  .personagem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .estrela {
+    width: 60px;
+  }
+  
+  .nome {
+    font-weight: bold;
+  }
+  
+  .texto {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+  
+  .seta {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  

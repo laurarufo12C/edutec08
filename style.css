@@ -8,6 +8,8 @@
 body {
     background-image: url(home/fundo-home.png);
     background-size: cover;
+    background-position-y: -202px;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -21,7 +23,7 @@ h1 {
     color: #3D7290;
     font-size: 96px;
     margin-left: 93px;
-    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.562);
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.562);
 }
 
 h2{
@@ -30,7 +32,7 @@ h2{
     margin-left: 93px;
     margin-top: 150px;
     font-weight: 300;
-    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.562);
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.562);
 }
 
 .texto {
@@ -44,7 +46,7 @@ p {
     color: white;
     width: 700px;
     font-size: 18px;
-    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.562);
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.562);
 }
 
 img{
@@ -52,33 +54,36 @@ img{
     margin-top: 64px;
 }
 
-.comece {
+.butao {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.comece {
     margin-top: 75px;
+    margin-bottom: 90px;
     background-color: #3D7290;
     color: white;
     border-radius: 50px;
-    padding: 20px;
+    padding: 30px;
     border: none;
     font-size: 28px;
     font-weight: 500;
+    cursor: pointer;
     box-shadow: 0px 2px 8px rgba(255, 255, 255, 0.707);
 }
 
 .hamburguer {
-    display: flex;
-    margin-right: 93px;
-    margin-top: 64px;
     position:absolute;
-    margin: 14px 0 0 93px;
+    margin: -845px 90px -100px 1740px;
     z-index: 1001;
     cursor: pointer;
-    font-size: 28px;
     color: white;
     background: none;
     border: none;
+    width: 130px;
+    font-size: 50px;
 }
 
 .menu {

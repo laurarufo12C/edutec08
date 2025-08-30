@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Biologia</title>
+  <link rel="stylesheet" href="Glob-1.css"> 
+  <script src="./Glob-1.js"></script>
+</head>
+<body>
+  <!-- TOPO -->
+  <div class="topo">
+    <div class="personagem">
+      <img src="/img-jogo/glob.png" alt="Peixe personagem">
+      <p class="nome">Glob</p>
+    </div>
+    <p class="texto-pergunta">
+      Primeira pergunta!<br>
+      Estrelas-do-mar e ouriços-do-mar pertencem ao filo dos equinodermos. 
+      Qual é a simetria corporal típica desses animais?
+    </p>
+  </div>
+
+  <!-- MEIO -->
+  <div class="meio">
+    <img src="/img-jogo/golfinho solo.png" alt="Golfinho" class="golfinho">
+
+    <div class="opcoes">
+        <button onclick="verificarResposta('A')">A) Simetria bilateral</button>
+        <button onclick="verificarResposta('B')">B) Simetria radial</button>
+        <button onclick="verificarResposta('C')">C) Simetria esférica</button>
+        <button onclick="verificarResposta('D')">D) Simetria espiral</button>
+      </div>
+  </div>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <a href="#" class="sair">Sair do quiz</a>
+  </footer>
+</body>
+</html>
