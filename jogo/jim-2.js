@@ -1,9 +1,17 @@
-function verificarResposta(resposta) {
-    if (resposta === "A") {
-      
-       window.location.href = "jim-3.html";
-    } else {
-      alert("❌ Resposta incorreta. Tente novamente!");
-    }
-  }
+function verificarResposta(opcao) {
   
+  if (opcao === 'A') {
+    
+     window.location.href = "jim-3.html";
+  } else {
+    abrirPopupErro();
+  }
+}
+
+function abrirPopupErro() {
+  document.getElementById("popupErro").style.display = "flex";
+}
+
+function fecharPopup() {
+  document.getElementById("popupErro").style.display = "none";
+}

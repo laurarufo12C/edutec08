@@ -1,9 +1,18 @@
-function verificarResposta(resposta) {
-    if (resposta === "B") {
-     
-      window.location.href = "Clara-2.html";
-    } else {
-      alert("❌ Resposta incorreta. Tente novamente!");
-    }
+
+function verificarResposta(opcao) {
+  // resposta correta = B
+  if (opcao === 'B') {
+    
+    window.location.href = "Clara-2.html";
+  } else {
+    abrirPopupErro();
   }
-  
+}
+
+function abrirPopupErro() {
+  document.getElementById("popupErro").style.display = "flex";
+}
+
+function fecharPopup() {
+  document.getElementById("popupErro").style.display = "none";
+}

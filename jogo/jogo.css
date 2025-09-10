@@ -10,7 +10,7 @@
     text-align: center;
     padding: 20px;
   
-    background-image: url('/img-jogo/foto\ fundo\ jogo.png');
+    background-image: url('/img/img-jogo/foto\ fundo\ jogo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,282 +101,255 @@
     font-size: 16px;
   }
  
-  /* Botão hambúrguer */
-.hamburguer {
-  position: absolute;
-  top: 4rem;
-  right: 4rem;
-  z-index: 1001;
-  cursor: pointer;
-  color: white;
-  background: none;
-  border: none;
-  width: 4rem;
-  font-size: 3.3rem;
-  transition: all 0.3s ease-in-out; /* para suavizar a mudança */
+  .hamburguer {
+    margin-top: 1.5rem;
+    margin-right: 10rem;
+    z-index: 1001;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+    width: 13rem;
+    font-size: 5rem;
 }
 
-
-/* Menu lateral */
 .menu {
-  position: fixed;
-  top: 0;
-  right: -30rem; /* escondido inicialmente (-250px) */
-  width: 30rem;  
-  height: 100%;
-  background: #e0f7fa;
-  box-shadow: -0.125rem 0 0.5rem rgba(0, 0, 0, 0.3);
-  padding-top: 3.75rem; /* espaço no topo */
-  transition: right 0.3s ease-in-out;
-  z-index: 1000;
-  
+    position: fixed;
+    top: 0;
+    right: -48rem; 
+    width: 48rem;   
+    height: 100%;
+    background: #e0f7fa;
+    box-shadow: -0.2rem 0 0.8rem rgba(0, 0, 0, 0.3);
+    padding-top: 6rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
 }
 
 .menu.active {
-  right: 0; 
-           /* nova cor */
+    right: 0;
 }
 
- .hamburguer.active button{
-  color: #137299;  
+.hamburguer.active button {
+    color: #137299;
 }
 
-
-/* Lista do menu */
 .menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.menu li{
-  margin-top: 10rem;
-  margin-bottom: -10rem;
-  margin-left: 3rem;
-  font-size: 3.5rem;
-
+.menu li {
+    margin-top: 16rem;
+    margin-bottom: -16rem;
+    margin-left: 4.8rem;
+    font-size: 5.6rem;
 }
 
-.menu button{
-  font-weight: 200;
-  color:  #137299;
+.menu button {
+    font-weight: 200;
+    color: #137299;
 }
 
 .menu ul a {
-  margin-bottom: - 2rem;
-  margin-top: 4rem;
-  text-decoration: none;
-  color:  #137299;
-  font-size: 2rem;
-  font-weight: 700;
-  padding: 0.1rem;
-}
-
-/* Botão fechar */
-.close-btn {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  margin-left: 1.5rem;
-  margin-top: 3.9rem;
-  font-size: 3rem;
-  cursor: pointer;
-  color: #022c43;
-  font-weight: bold;
-  border: none;
-  background: none;
-}
-
-
-
-
-
-
-  .h1red{
+    text-decoration: none;
     color: #137299;
-    font-size: 2rem;
-    margin-top: 30rem;
-   margin-bottom: -3.3rem;
-   margin-left: 3rem;
-    align-items: center;  
-  }
-
-
-
-.renemo{
-  position: relative;     
-  display: inline-block;
+    font-size: 3.2rem;
+    font-weight: 700;
+    padding: 0.16rem;
+    
 }
 
-
-
-.r1{
-  background-color: #5a87a0;
-  color: white;
-  border: none;
-  padding: 0.625rem 1.5625rem;
-  border-radius: 1.25rem;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 0.625rem 0 0.9375rem 0;
-  transition: background 0.3s ease;
-  position: absolute;
-  bottom: -2rem;
-  right: 1.5rem; 
-  text-decoration: none;
+.close-btn {
+    position: absolute;
+    top: 1.6rem;
+    left: 1.6rem;
+    margin-left: 2.88rem;
+    margin-top: 3.52rem;
+    font-size: 4.8rem;
+    cursor: pointer;
+    color: #137299;
+    font-weight: 300;
+    border: none;
+    background: none;
 }
 
+.h1red {
+    color: #137299;
+    font-size: 3.2rem;
+    margin-top: 48rem;
+    margin-bottom: -5.28rem;
+    margin-left: 4.8rem;
+    align-items: center;
+}
+
+.renemo {
+    position: relative;
+    display: inline-block;
+}
+
+.r1 {
+    background-color: #5a87a0;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 1rem 0 1.5rem 0;
+    transition: background 0.3s ease;
+    position: absolute;
+    bottom: -3.2rem;
+    right: 2.4rem;
+    text-decoration: none;
+}
 
 /* ----------- reja ----------- */
-.reja{
-  position: relative;     
-  display: inline-block;
+.reja {
+    position: relative;
+    display: inline-block;
 }
 
-.reja img{
-  display: block;
-  width: 10rem;            
-  border-radius: 2rem;
+.reja img {
+    display: block;
+    width: 16rem;
+    border-radius: 3.2rem;
 }
 
-.r2{
-  background-color: #5a87a0;
-  color: white;
-  border: none;
-  padding: 0.625rem 1.5625rem;
-  border-radius: 1.25rem;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 0.625rem 0 0.9375rem 0;
-  transition: background 0.3s ease;
-  position: absolute;
-  bottom: -2rem;
-  right: 1.5rem; 
-  text-decoration: none;
+.r2 {
+    background-color: #5a87a0;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 1rem 0 1.5rem 0;
+    transition: background 0.3s ease;
+    position: absolute;
+    bottom: -3.2rem;
+    right: 2.4rem;
+    text-decoration: none;
 }
-
 
 /* ----------- reinto ----------- */
-.reinto{
-  position: relative;     
-  display: inline-block;
+.reinto {
+    position: relative;
+    display: inline-block;
 }
 
-.reinto img{
-  display: block;
-  width: 10rem;            
-  border-radius: 2rem;
+.reinto img {
+    display: block;
+    width: 16rem;
+    border-radius: 3.2rem;
 }
 
-.r3{
-  background-color: #5a87a0;
-  color: white;
-  border: none;
-  padding: 0.625rem 1.5625rem;
-  border-radius: 1.25rem;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 0.625rem 0 0.9375rem 0;
-  transition: background 0.3s ease;
-  position: absolute;
-  bottom: -2rem;
-  right: 1.5rem; 
-  text-decoration: none;
-
+.r3 {
+    background-color: #5a87a0;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 1rem 0 1.5rem 0;
+    transition: background 0.3s ease;
+    position: absolute;
+    bottom: -3.2rem;
+    right: 2.4rem;
+    text-decoration: none;
 }
-
 
 /* ----------- reocean ----------- */
-.reoce{
-  position: relative;     
-  display: inline-block;
+.reoce {
+    position: relative;
+    display: inline-block;
 }
 
-.reoce img{
-  display: block;
-  width: 10rem;            
-  border-radius: 2rem;
+.reoce img {
+    display: block;
+    width: 16rem;
+    border-radius: 3.2rem;
 }
 
-.r4{
-  background-color: #5a87a0;
-  color: white;
-  border: none;
-  padding: 0.625rem 1.5625rem;
-  border-radius: 1.25rem;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 0.625rem 0 0.9375rem 0;
-  transition: background 0.3s ease;
-  position: absolute;
-  bottom: -2rem;
-  right: 1.5rem; 
-  text-decoration: none;
-
+.r4 {
+    background-color: #5a87a0;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 1rem 0 1.5rem 0;
+    transition: background 0.3s ease;
+    position: absolute;
+    bottom: -3.2rem;
+    right: 2.4rem;
+    text-decoration: none;
 }
-
 
 /* ----------- remy ----------- */
-.remy{
-  position: relative;     
-  display: inline-block;
+.remy {
+    position: relative;
+    display: inline-block;
 }
 
-.remy img{
-  display: block;
-  width: 10rem;            
-  border-radius: 2rem;
+.remy img {
+    display: block;
+    width: 16rem;
+    border-radius: 3.2rem;
 }
 
-.r5{
-  background-color: #5a87a0;
-  color: white;
-  border: none;
-  padding: 0.625rem 1.5625rem;
-  border-radius: 1.25rem;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 0.625rem 0 0.9375rem 0;
-  transition: background 0.3s ease;
-  position: absolute;
-  bottom: -2rem;
-  right: 1.5rem;
-  text-decoration: none;
- 
+.r5 {
+    background-color: #5a87a0;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 1rem 0 1.5rem 0;
+    transition: background 0.3s ease;
+    position: absolute;
+    bottom: -3.2rem;
+    right: 2.4rem;
+    text-decoration: none;
 }
-
 
 /* ----------- reco ----------- */
-.reco{
-  position: relative;     
-  display: inline-block;
+.reco {
+    position: relative;
+    display: inline-block;
 }
 
-.reco img{
-  display: block;
-  width: 10rem;            
-  border-radius: 2rem;
+.reco img {
+    display: block;
+    width: 16rem;
+    border-radius: 3.2rem;
 }
 
-.r6{
-  background-color: #5a87a0;
-  color: white;
-  border: none;
-  padding: 0.625rem 1.5625rem;
-  border-radius: 1.25rem;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 0.625rem 0 0.9375rem 0;
-  transition: background 0.3s ease;
-  position: absolute;
-  bottom: -2rem;
-  right: 1.5rem; 
-  text-decoration: none;
+.r6 {
+    background-color: #5a87a0;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 1rem 0 1.5rem 0;
+    transition: background 0.3s ease;
+    position: absolute;
+    bottom: -3.2rem;
+    right: 2.4rem;
+    text-decoration: none;
 }
-  

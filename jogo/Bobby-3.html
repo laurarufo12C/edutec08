@@ -9,7 +9,7 @@
 <body>
   <div class="topo">
     <div class="personagem">
-      <img src="/img-jogo/Bobby.png" alt="Bobby">
+      <img src="/img/img-jogo/Bobby.png" alt="Bobby">
       <p class="nome">Bobby</p>
     </div>
     <div class="texto-pergunta">
@@ -19,7 +19,7 @@
   </div>
 
   <div class="meio">
-    <img src="/img-jogo/golfinho solo.png" alt="Golfinho" class="golfinho">
+    <img src="/img/img-jogo/golfinho solo.png" alt="Golfinho" class="golfinho">
     <div class="opcoes">
       <button onclick="verificarResposta('A')">A) Capacidade de voar</button>
       <button onclick="verificarResposta('B')">B) Respiração prolongada fora da água</button>
@@ -37,32 +37,13 @@
    <!-- POP-UP ERRO -->
    <div id="popupErro" class="popup-erro">
     <div class="popup-conteudo">
-      <img src="/img-jogo/golfinho-erro.png" alt="Golfinho triste" class="golfinho-popup">
+      <img src="/img/img-jogo/golfinho-erro.png" alt="Golfinho triste" class="golfinho-popup">
       <h2>Poxa! Você errou!</h2>
       <p>Eu sei que você consegue!</p>
       <button onclick="fecharPopup()">Tentar novamente</button>
     </div>
   </div>
 
-  <script>
-    function verificarResposta(opcao) {
-      // resposta correta = B
-      if (opcao === 'B') {
-        alert("Parabéns! Resposta correta 🎉");
-        // aqui você pode redirecionar para a próxima pergunta
-        // window.location.href = "pagina2.html";
-      } else {
-        abrirPopupErro();
-      }
-    }
-
-    function abrirPopupErro() {
-      document.getElementById("popupErro").style.display = "flex";
-    }
-
-    function fecharPopup() {
-      document.getElementById("popupErro").style.display = "none";
-    }
-  </script>
+  
 </body>
 </html>
