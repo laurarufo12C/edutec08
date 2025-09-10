@@ -61,4 +61,20 @@
     font-size: 24px;
     cursor: pointer;
   }
+  /* Botão hambúrguer */
+.hamburguer {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  z-index: 1001;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: none;
+  width: 4rem;
+  font-size: 3.3rem;
+  transition: all 0.3s ease-in-out; /* para suavizar a mudança */
+}
+
+
   

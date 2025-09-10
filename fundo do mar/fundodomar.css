@@ -1,0 +1,416 @@
+* { 
+  margin:0; 
+  padding:0; 
+  box-sizing:border-box;
+  font-family: 'Inter';  
+}
+
+html, body { 
+  height:100%; 
+  color:white; }
+
+  h1 {
+    color: #D7F3FF;
+  }
+  
+
+
+.background-container {
+  position: relative;
+  width: 100%;
+}
+
+
+.background-container img.fundo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.overlay-rectangle {
+  position: absolute;
+  top: 20px; 
+  left:50%;
+  transform: translateX(-50%);
+  width: 95%;
+  max-width: 1400px;
+  height: calc(100% - 40px); 
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 100%);
+  border-radius: 12px;
+  padding: 50px 40px 70px 40px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  z-index: 10;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+
+.header-content {
+  text-align: center;
+  margin-top: 180px; 
+  margin-bottom: 140px; 
+}
+
+.header-content h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.header-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.header-content p {
+  max-width: 800px;
+  font-size: 1.2rem;
+  opacity: 0.9;
+  line-height: 1.8;
+}
+
+
+.main-content {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  flex: 1;
+}
+
+
+.labels-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 80px;
+}
+
+
+.line-column {
+  position: relative;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.vertical-line {
+  width: 2px;
+  background: white;
+  height: 100%;
+}
+
+
+.animals-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  margin-top: 20px;
+}
+
+.marine-life {
+  display: flex;
+  justify-content: flex-start;
+  gap: 150px; 
+  flex-wrap: wrap;
+}
+
+.marine-life img {
+  width: auto;
+  max-width: 200px; 
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.marine-life img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+
+.animals-column .marine-life:last-child {
+  margin-bottom: 100px; 
+}
+
+
+/* Botão hambúrguer */
+.hamburguer {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  z-index: 1001;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: none;
+  width: 4rem;
+  font-size: 3.3rem;
+  transition: all 0.3s ease-in-out; /* para suavizar a mudança */
+}
+
+
+/* Menu lateral */
+.menu {
+  position: fixed;
+  top: 0;
+  right: -30rem; /* escondido inicialmente (-250px) */
+  width: 30rem;  
+  height: 100%;
+  background: #e0f7fa;
+  box-shadow: -0.125rem 0 0.5rem rgba(0, 0, 0, 0.3);
+  padding-top: 3.75rem; /* espaço no topo */
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  
+}
+
+.menu.active {
+  right: 0; 
+           /* nova cor */
+}
+
+ .hamburguer.active button{
+  color: #137299;  
+}
+
+
+/* Lista do menu */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li{
+  margin-top: 10rem;
+  margin-bottom: -10rem;
+  margin-left: 3rem;
+  font-size: 3.5rem;
+
+}
+
+.menu button{
+  font-weight: 200;
+  color:  #137299;
+}
+
+.menu ul a {
+  margin-bottom: - 2rem;
+  margin-top: 4rem;
+  text-decoration: none;
+  color:  #137299;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.1rem;
+}
+
+/* Botão fechar */
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  margin-left: 1.5rem;
+  margin-top: 3.9rem;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #022c43;
+  font-weight: bold;
+  border: none;
+  background: none;
+}
+
+  .h1red{
+    color: #137299;
+    font-size: 2rem;
+    margin-top: 30rem;
+   margin-bottom: -3.3rem;
+   margin-left: 3rem;
+    align-items: center;  
+  }
+
+.renemo{
+  position: relative;     
+  display: inline-block;
+}
+
+.r1{
+  background-color: #5a87a0;
+  color: white;
+  border: none;
+  padding: 0.625rem 1.5625rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.625rem 0 0.9375rem 0;
+  transition: background 0.3s ease;
+  position: absolute;
+  bottom: -2rem;
+  right: 1.5rem; 
+  text-decoration: none;
+}
+
+
+
+.reja{
+  position: relative;     
+  display: inline-block;
+}
+
+.reja img{
+  display: block;
+  width: 10rem;            
+  border-radius: 2rem;
+}
+
+.r2{
+  background-color: #5a87a0;
+  color: white;
+  border: none;
+  padding: 0.625rem 1.5625rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.625rem 0 0.9375rem 0;
+  transition: background 0.3s ease;
+  position: absolute;
+  bottom: -2rem;
+  right: 1.5rem; 
+  text-decoration: none;
+}
+
+
+.reinto{
+  position: relative;     
+  display: inline-block;
+}
+
+.reinto img{
+  display: block;
+  width: 10rem;            
+  border-radius: 2rem;
+}
+
+.r3{
+  background-color: #5a87a0;
+  color: white;
+  border: none;
+  padding: 0.625rem 1.5625rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.625rem 0 0.9375rem 0;
+  transition: background 0.3s ease;
+  position: absolute;
+  bottom: -2rem;
+  right: 1.5rem; 
+  text-decoration: none;
+
+}
+
+
+.reoce{
+  position: relative;     
+  display: inline-block;
+}
+
+.reoce img{
+  display: block;
+  width: 10rem;            
+  border-radius: 2rem;
+}
+
+.r4{
+  background-color: #5a87a0;
+  color: white;
+  border: none;
+  padding: 0.625rem 1.5625rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.625rem 0 0.9375rem 0;
+  transition: background 0.3s ease;
+  position: absolute;
+  bottom: -2rem;
+  right: 1.5rem; 
+  text-decoration: none;
+
+}
+
+.remy{
+  position: relative;     
+  display: inline-block;
+}
+
+.remy img{
+  display: block;
+  width: 10rem;            
+  border-radius: 2rem;
+}
+
+.r5{
+  background-color: #5a87a0;
+  color: white;
+  border: none;
+  padding: 0.625rem 1.5625rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.625rem 0 0.9375rem 0;
+  transition: background 0.3s ease;
+  position: absolute;
+  bottom: -2rem;
+  right: 1.5rem;
+  text-decoration: none;
+ 
+}
+
+
+.reco{
+  position: relative;     
+  display: inline-block;
+}
+
+.reco img{
+  display: block;
+  width: 10rem;            
+  border-radius: 2rem;
+}
+
+.r6{
+  background-color: #5a87a0;
+  color: white;
+  border: none;
+  padding: 0.625rem 1.5625rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.625rem 0 0.9375rem 0;
+  transition: background 0.3s ease;
+  position: absolute;
+  bottom: -2rem;
+  right: 1.5rem; 
+  text-decoration: none;
+}
+

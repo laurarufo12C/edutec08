@@ -6,10 +6,11 @@
   <title>Quiz Biologia</title>
   <link rel="stylesheet" href="jim-1.css">
 </head>
+
 <body>
   <div class="topo">
     <div class="personagem">
-      <img src="/img-jogo/jim.png" alt="Jim">
+      <img src="/img/img-jogo/jim.png" alt="Jim">
       <p class="nome">Jim</p>
     </div>
     <div class="texto-pergunta">
@@ -19,7 +20,7 @@
   </div>
 
   <div class="meio">
-    <img src="/img-jogo/golfinho solo.png" alt="Golfinho" class="golfinho">
+    <img src="/img/img-jogo/golfinho solo.png" alt="Golfinho" class="golfinho">
     <div class="opcoes">
       <button onclick="verificarResposta('A')">A) Simetria bilateral</button>
       <button onclick="verificarResposta('B')">B) Simetria radial</button>
@@ -29,9 +30,22 @@
   </div>
 
   <footer>
-    <a href="#" class="sair">Sair do quiz</a>
+    <a href="/jogo/jogo.html" class="sair">Sair do quiz</a>
   </footer>
 
   <script src="/jogo/jim-1.js"></script>
+
+ <!-- POP-UP ERRO -->
+ <div id="popupErro" class="popup-erro">
+  <div class="popup-conteudo">
+    <img src="/img-jogo/golfinho solo.png" alt="Golfinho triste" class="golfinho-popup">
+    <h2>Poxa! Você errou!</h2>
+    <p>Eu sei que você consegue!</p>
+    <button onclick="fecharPopup()">Tentar novamente</button>
+  </div>
+</div>
+
+
+
 </body>
 </html>

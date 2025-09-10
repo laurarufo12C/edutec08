@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz Biologia</title>
-  <link rel="stylesheet" href="Glob-1.css"> 
+  <link rel="stylesheet" href="jim-1.css"> 
   <script src="./Glob-1.js"></script>
 </head>
 <body>
@@ -21,7 +21,7 @@
     </p>
   </div>
 
-  <!-- MEIO -->
+  
   <div class="meio">
     <img src="/img-jogo/golfinho solo.png" alt="Golfinho" class="golfinho">
 
@@ -33,9 +33,39 @@
       </div>
   </div>
 
-  <!-- RODAPÉ -->
   <footer>
-    <a href="#" class="sair">Sair do quiz</a>
+    <a href="/jogo/jogo.html" class="sair">Sair do quiz</a>
   </footer>
+
+   <!-- POP-UP ERRO -->
+   <div id="popupErro" class="popup-erro">
+    <div class="popup-conteudo">
+      <img src="/img-jogo/golfinho solo.png" alt="Golfinho triste" class="golfinho-popup">
+      <h2>Poxa! Você errou!</h2>
+      <p>Eu sei que você consegue!</p>
+      <button onclick="fecharPopup()">Tentar novamente</button>
+    </div>
+  </div>
+
+  <script>
+    function verificarResposta(opcao) {
+      // resposta correta = B
+      if (opcao === 'B') {
+        alert("Parabéns! Resposta correta 🎉");
+        // aqui você pode redirecionar para a próxima pergunta
+        // window.location.href = "pagina2.html";
+      } else {
+        abrirPopupErro();
+      }
+    }
+
+    function abrirPopupErro() {
+      document.getElementById("popupErro").style.display = "flex";
+    }
+
+    function fecharPopup() {
+      document.getElementById("popupErro").style.display = "none";
+    }
+  </script>
 </body>
 </html>

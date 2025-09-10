@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz Biologia - Pergunta 3</title>
-  <link rel="stylesheet" href="jim-3.css">
+  <link rel="stylesheet" href="clara-3.css">
 </head>
 <body>
   <div class="topo">
     <div class="personagem">
-      <img src="/img-jogo/jim.png" alt="Jim">
-      <p class="nome">Jim</p>
+      <img src="/img-jogo/Clara.png" alt="clara">
+      <p class="nome">clara</p>
     </div>
     <div class="texto-pergunta">
       <p><strong>Essa é a última, vamos!</strong><br>
@@ -29,9 +29,40 @@
   </div>
 
   <footer>
-    <a href="#" class="sair">Sair do quiz</a>
+    <a href="/jogo/jogo.html" class="sair">Sair do quiz</a>
   </footer>
 
-  <script src="jim-3.js"></script>
+  <script src="clara-3.js"></script>
+
+   <!-- POP-UP ERRO -->
+   <div id="popupErro" class="popup-erro">
+    <div class="popup-conteudo">
+      <img src="/img-jogo/golfinho-erro.png" alt="Golfinho triste" class="golfinho-popup">
+      <h2>Poxa! Você errou!</h2>
+      <p>Eu sei que você consegue!</p>
+      <button onclick="fecharPopup()">Tentar novamente</button>
+    </div>
+  </div>
+
+  <script>
+    function verificarResposta(opcao) {
+      // resposta correta = B
+      if (opcao === 'B') {
+        alert("Parabéns! Resposta correta 🎉");
+        // aqui você pode redirecionar para a próxima pergunta
+        // window.location.href = "pagina2.html";
+      } else {
+        abrirPopupErro();
+      }
+    }
+
+    function abrirPopupErro() {
+      document.getElementById("popupErro").style.display = "flex";
+    }
+
+    function fecharPopup() {
+      document.getElementById("popupErro").style.display = "none";
+    }
+  </script>
 </body>
 </html>

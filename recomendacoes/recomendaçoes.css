@@ -1,0 +1,366 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    /*overflow: hidden; /* impede a rolagem */
+  
+  background-image: linear-gradient(rgba(0, 39, 61, 0.97), rgba(0, 39, 61, 0.97)), 
+  url(/james-eades-RVX2STx44UI-unsplash.jpg);
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+
+ 
+
+}
+
+img{
+  margin-left: 5.8125rem; /* 93px */
+  margin-top: 4rem; /* 64px */
+}
+
+.titulo{
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;     
+  font-size: 6rem; /* 96px */
+  line-height: 2.5rem; /* 40px */
+  color: #D7F3FF;
+  text-align: center;
+}
+
+.filmes{
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;       
+  font-size: 2rem; /* 32px */
+  line-height: 2.5rem; /* 40px */
+  letter-spacing: 0;
+  color: #FFFFFF;
+  text-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25); /* 0px 4px 4px */
+  position: relative;
+  margin: 3.9375rem 0 3.75rem 5.625rem; /* 63px 0 60px 90px */
+}
+
+.documentario{
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;       
+  font-size: 2rem; /* 32px */
+  line-height: 2.5rem; /* 40px */
+  letter-spacing: 0;
+  color: #FFFFFF;
+  text-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  position: relative;
+  margin: 3.9375rem 0 3.75rem 5.625rem; /* 63px 0 60px 90px */
+}
+
+.filmesum{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: .9;
+  gap: 13.25rem; /* 212px */
+}
+
+.filmesdois {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: .9;
+  padding-bottom: 4.4375rem;
+  gap: 13.25rem; /* 212px */
+}
+
+/* Botão hambúrguer */
+.hamburguer {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  z-index: 1001;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: none;
+  width: 4rem;
+  font-size: 3.3rem;
+  transition: all 0.3s ease-in-out; /* para suavizar a mudança */
+}
+
+
+/* Menu lateral */
+.menu {
+  position: fixed;
+  top: 0;
+  right: -30rem; /* escondido inicialmente (-250px) */
+  width: 30rem;  
+  height: 100%;
+  background: #e0f7fa;
+  box-shadow: -0.125rem 0 0.5rem rgba(0, 0, 0, 0.3);
+  padding-top: 3.75rem; /* espaço no topo */
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  
+}
+
+.menu.active {
+  right: 0; 
+           /* nova cor */
+}
+
+ .hamburguer.active button{
+  color: #137299;  
+}
+
+
+/* Lista do menu */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li{
+  margin-top: 10rem;
+  margin-bottom: -10rem;
+  margin-left: 3rem;
+  font-size: 3.5rem;
+
+}
+
+.menu button{
+  font-weight: 200;
+  color:  #137299;
+}
+
+.menu ul a {
+  margin-bottom: - 2rem;
+  margin-top: 4rem;
+  text-decoration: none;
+  color:  #137299;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.1rem;
+}
+
+/* Botão fechar */
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  margin-left: 1.5rem;
+  margin-top: 3.9rem;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #022c43;
+  font-weight: bold;
+  border: none;
+  background: none;
+}
+
+
+
+
+
+
+  .h1red{
+    color: #137299;
+    font-size: 2rem;
+    margin-top: 30rem;
+   margin-bottom: -3.3rem;
+   margin-left: 3rem;
+    align-items: center;  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.renemo{
+  position: relative;     
+  display: inline-block;
+}
+
+
+
+.r1{
+  background-color: #5a87a0;
+  color: white;
+  border: none;
+  padding: 0.625rem 1.5625rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.625rem 0 0.9375rem 0;
+  transition: background 0.3s ease;
+  position: absolute;
+  bottom: -2rem;
+  right: 1.5rem; 
+  text-decoration: none;
+}
+
+
+/* ----------- reja ----------- */
+.reja{
+  position: relative;     
+  display: inline-block;
+}
+
+.reja img{
+  display: block;
+  width: 10rem;            
+  border-radius: 2rem;
+}
+
+.r2{
+  background-color: #5a87a0;
+  color: white;
+  border: none;
+  padding: 0.625rem 1.5625rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.625rem 0 0.9375rem 0;
+  transition: background 0.3s ease;
+  position: absolute;
+  bottom: -2rem;
+  right: 1.5rem; 
+  text-decoration: none;
+}
+
+
+/* ----------- reinto ----------- */
+.reinto{
+  position: relative;     
+  display: inline-block;
+}
+
+.reinto img{
+  display: block;
+  width: 10rem;            
+  border-radius: 2rem;
+}
+
+.r3{
+  background-color: #5a87a0;
+  color: white;
+  border: none;
+  padding: 0.625rem 1.5625rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.625rem 0 0.9375rem 0;
+  transition: background 0.3s ease;
+  position: absolute;
+  bottom: -2rem;
+  right: 1.5rem; 
+  text-decoration: none;
+
+}
+
+
+/* ----------- reocean ----------- */
+.reoce{
+  position: relative;     
+  display: inline-block;
+}
+
+.reoce img{
+  display: block;
+  width: 10rem;            
+  border-radius: 2rem;
+}
+
+.r4{
+  background-color: #5a87a0;
+  color: white;
+  border: none;
+  padding: 0.625rem 1.5625rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.625rem 0 0.9375rem 0;
+  transition: background 0.3s ease;
+  position: absolute;
+  bottom: -2rem;
+  right: 1.5rem; 
+  text-decoration: none;
+
+}
+
+
+/* ----------- remy ----------- */
+.remy{
+  position: relative;     
+  display: inline-block;
+}
+
+.remy img{
+  display: block;
+  width: 10rem;            
+  border-radius: 2rem;
+}
+
+.r5{
+  background-color: #5a87a0;
+  color: white;
+  border: none;
+  padding: 0.625rem 1.5625rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.625rem 0 0.9375rem 0;
+  transition: background 0.3s ease;
+  position: absolute;
+  bottom: -2rem;
+  right: 1.5rem;
+  text-decoration: none;
+ 
+}
+
+
+/* ----------- reco ----------- */
+.reco{
+  position: relative;     
+  display: inline-block;
+}
+
+.reco img{
+  display: block;
+  width: 10rem;            
+  border-radius: 2rem;
+}
+
+.r6{
+  background-color: #5a87a0;
+  color: white;
+  border: none;
+  padding: 0.625rem 1.5625rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.625rem 0 0.9375rem 0;
+  transition: background 0.3s ease;
+  position: absolute;
+  bottom: -2rem;
+  right: 1.5rem; 
+  text-decoration: none;
+}
