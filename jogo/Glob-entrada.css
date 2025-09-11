@@ -8,6 +8,7 @@
     font-family: Arial, sans-serif;
     background-color: #0a3d62;
     color: #000;
+    background-image: url("/img/img-jogo/foto\ fundo\ jogo.png");
   }
   
   .topo {
@@ -60,5 +61,6 @@
     right: 20px;
     font-size: 24px;
     cursor: pointer;
+    
   }
   
