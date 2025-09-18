@@ -11,35 +11,70 @@
     display: flex;
     flex-direction: column;
     background-color: #c9ecff;
+    background-image: url("/img/img-jogo/foto\ fundo\ jogo.png");
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
+    min-height: 0;
   }
   
-  /* Topo fixo */
+  
   .topo {
-    background-color: #b9e3ff;
+    background-color: #c9ecff;
     display: flex;
     padding: 15px;
     align-items: center;
+    height: 30vh;
+  }
+
+
+  .bi{
+    height: 7vh;
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
   }
   
-  /* Estrela + nome */
+  .ra{
+    height: 7vh;
+    margin-bottom: 1.5rem;
+  }
+
+
+  .esf{
+    height: 7vh;
+    margin-bottom: 1.5rem;
+  }
+
+  .esp{
+    height: 7vh;
+    margin-bottom: 1.5rem;
+  }
+
   .personagem {
     text-align: center;
+
   }
   
   .personagem img {
     width: 80px;
+    transform: scale(1.5); 
+    margin-left: 5rem;
   }
   
-  .nome {
-    margin: 0;
-    font-size: 14px;
+  .texto-pergunta h2{
+    
+    margin-left: 10rem;
+  text-align: center;
+    font-size: 2.5rem;
   }
   
-  
-  .texto-pergunta {
-    margin-left: 15px;
-    font-size: 18px;
-    color: #000;
+  .texto-pergunta p {
+    margin-top: 1rem;
+    margin-left: 10rem;
+  text-align: center;
+    font-size: 1.5rem;
+    color: #00273D;
+    background-color: #c9ecff;
   }
   
   
@@ -50,11 +85,11 @@
     align-items: flex-start;
     gap: 30px;
   
-    background-image: url("/img/img-jogo/foto\ fundo\ jogo.png");
-    background-size: cover;      
-    background-position: center; 
-    background-repeat: no-repeat;
-    min-height: 0;
+  }
+
+  .golso{
+    transform: scale(1.5); 
+    margin-top: 10rem;
   }
   
   
@@ -70,6 +105,7 @@
     gap: 20px;
     flex: 1;
   }
+
   
   .opcoes button {
     background-color: #c9ecff;
@@ -95,9 +131,9 @@
   }
   
   .sair {
-    color: rgb(15, 15, 15);
+    color: #00273D;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
   }
   
   /* === POPUP ERRO === */
@@ -114,6 +150,7 @@
   z-index: 9999;
 }
 
+
 .popup-conteudo {
   background: #e9f6ff;
   padding: 20px;
@@ -125,12 +162,12 @@
 }
 
 .golfinho-popup {
-  width: 100px;
+  width: 250px;
   margin-bottom: 15px;
 }
 
 .popup-conteudo button {
-  background: #003366;
+  background: #00273D;
   color: #fff;
   border: none;
   padding: 10px 18px;
@@ -140,5 +177,5 @@
 }
 
 .popup-conteudo button:hover {
-  background: #0055aa;
+  background: #425f7c;
 }

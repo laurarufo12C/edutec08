@@ -1,65 +1,97 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0a3d62;
+  color: #000;
+  background-image: url("/img/img-jogo/foto\ fundo\ jogo.png");
+}
+
+.estrelaimg{
+  width: 300px;
+  height: auto;
+  margin-left: 4rem;
+}
+
+.texto {
+  margin-bottom: 15rem;
+}
+
+.topo {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.golfinho {
+  width: 450px;
+  height: auto;
+}
+
+.mensagem {
+  background-color: #cceeff;
+  padding: 10rem;
+  display: flex;
+  align-items: center;   /* centraliza verticalmente personagem, texto e seta */
+  justify-content: space-between;
+  gap: 20px;             /* espaço entre os elementos */
+  border-radius: 10px;
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+ 
+}
+
+.personagem {
   
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #0a3d62;
-    color: #000;
-    background-image: url("/img/img-jogo/foto\ fundo\ jogo.png");
-  }
-  
-  .topo {
-    position: relative;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .golfinho {
-    width: 200px;
-    height: auto;
-  }
-  
-  
-  
-  .mensagem {
-    background-color: #cceeff;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    position: relative;
-  }
-  
-  .personagem {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .estrela {
-    width: 60px;
-  }
-  
-  .nome {
-    font-weight: bold;
-  }
-  
-  .texto {
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: bold;
-  }
-  
-  .seta {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
+  height: 5rem;
+  display: flex;
+  flex-direction: column; /* coloca estrela em cima e nome embaixo */
+  align-items: center;
+  gap: 5px;
+}
+
+.estrela {
+  width: 60px;
+}
+
+.nome {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.texto {
+  flex: 1;                /* faz o texto ocupar o espaço disponível */
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: bold;
+  margin: 0 15px;
+  color: #00273D;         
+}
+
+.seta img {
+  width: 70px;            /* deixa menor */
+  height: auto;
+  cursor: pointer;
+}
+
+/* Botão hambúrguer */
+.hamburguer {
+position: absolute;
+top: 4rem;
+right: 4rem;
+z-index: 1001;
+cursor: pointer;
+color: white;
+background: none;
+border: none;
+width: 4rem;
+font-size: 3.3rem;
+transition: all 0.3s ease-in-out; /* para suavizar a mudança */
+}

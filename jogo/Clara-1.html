@@ -5,26 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz Biologia</title>
   <link rel="stylesheet" href="clara-1.css">
+  <script src="./clara-1.js"></script>
 </head>
 <body>
   <div class="topo">
     <div class="personagem">
-      <img src="/img/img-jogo/Clara.png" alt="Clara">
-      <p class="nome">Clara</p>
+      <img src="/img/img-jogo/Clara.png" alt="Bobby">
     </div>
     <div class="texto-pergunta">
-      <p><strong>Primeira pergunta!</strong><br>
-      Estrelas-do-mar e ouriços-do-mar pertencem ao filo dos equinodermos. Qual é a simetria corporal típica desses animais?</p>
+      <h2><strong>Primeira pergunta!</strong></h2>
+      <p>Estrelas-do-mar e ouriços-do-mar pertencem ao filo dos equinodermos. Qual é a simetria corporal típica desses animais?</p>
     </div>
   </div>
 
   <div class="meio">
-    <img src="/img/img-jogo/golfinho solo.png" alt="Golfinho" class="golfinho">
+    <img class="golso" src="/img/img-jogo/golfinho solo.png" alt="Golfinho" class="golfinho">
     <div class="opcoes">
-      <button onclick="verificarResposta('A')">A) Simetria bilateral</button>
-      <button onclick="verificarResposta('B')">B) Simetria radial</button>
-      <button onclick="verificarResposta('C')">C) Simetria esférica</button>
-      <button onclick="verificarResposta('D')">D) Simetria espiral</button>
+      <button class="bi" onclick="verificarResposta('A')">A) Simetria bilateral</button>
+      <button class="ra" onclick="verificarResposta('B')">B) Simetria radial</button>
+      <button class="esf" onclick="verificarResposta('C')">C) Simetria esférica</button>
+      <button class="esp" onclick="verificarResposta('D')">D) Simetria espiral</button>
     </div>
   </div>
 
@@ -32,18 +32,18 @@
     <a href="/jogo/jogo.html" class="sair">Sair do quiz</a>
   </footer>
 
-  <script src="/jogo/clara-1.js"></script>
 
-   <!-- POP-UP ERRO -->
-   <div id="popupErro" class="popup-erro">
-    <div class="popup-conteudo">
-      <img src="/img/img-jogo/golfinho solo.png" alt="Golfinho triste" class="golfinho-popup">
-      <h2>Poxa! Você errou!</h2>
-      <p>Eu sei que você consegue!</p>
-      <button onclick="fecharPopup()">Tentar novamente</button>
-    </div>
+
+ <!-- POP-UP ERRO -->
+ <div id="popupErro" class="popup-erro">
+  <div class="popup-conteudo">
+    <img src="/img/img-jogo/erro.png" alt="Golfinho triste" class="golfinho-popup">
+    <h2>Poxa! Você errou!</h2>
+    <button onclick="fecharPopup()">Tentar novamente</button>
   </div>
+</div>
 
-  
+
+
 </body>
 </html>

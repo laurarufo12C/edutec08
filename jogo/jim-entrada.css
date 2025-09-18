@@ -9,59 +9,82 @@
     background-color: #0a3d62;
     color: #000;
     background-image: url("/img/img-jogo/foto\ fundo\ jogo.png");
+    height: 200%;
+  }
+
+  .estrelaimg{
+    width: 300px;
+    height: auto;
+    margin-left: -4rem;
+    margin-top: -10rem;
+  }
+
+  .texto {
+    margin-bottom: 15rem;
   }
   
   .topo {
     position: relative;
-    height: 60vh;
+    width: 16rem;
+    margin-left: 55rem;
+    height: 50vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    jutransform: scale(1.5); stify-content: center;
+    
   }
   
   .golfinho {
-    width: 200px;
+    width: 450px;
     height: auto;
   }
   
-  
-  
   .mensagem {
     background-color: #cceeff;
-    padding: 20px;
+    padding: 10rem;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    align-items: center;   /* centraliza verticalmente personagem, texto e seta */
+    justify-content: space-between;
+    gap: 20px;             /* espaço entre os elementos */
+    border-radius: 10px;
+    max-width: 100%;
+    margin: auto;
     position: relative;
+    height: 50vh;
+   
   }
   
   .personagem {
+    
+    height: 5rem;
     display: flex;
+    flex-direction: column; /* coloca estrela em cima e nome embaixo */
     align-items: center;
-    gap: 10px;
+    gap: 5px;
   }
   
-  .estrela {
-    width: 60px;
-  }
+ 
   
   .nome {
     font-weight: bold;
+    font-size: 14px;
   }
-  
+
   .texto {
-    font-size: 16px;
+    flex: 1;                /* faz o texto ocupar o espaço disponível */
+    font-size: 2rem;
     line-height: 1.5;
     font-weight: bold;
+    margin: 0 15px;
+    color: #00273D;         
   }
   
-  .seta {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    font-size: 24px;
+  .seta img {
+    width: 70px;            /* deixa menor */
+    height: auto;
     cursor: pointer;
   }
+  
   /* Botão hambúrguer */
 .hamburguer {
   position: absolute;

@@ -3,28 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz Biologia - Pergunta 3</title>
   <link rel="stylesheet" href="Glob-3.css">
+  <script src="/jogo/Glob-3.js"></script>
+  <title>Quiz Biologia - Pergunta 2</title>
+  
 </head>
+
 <body>
   <div class="topo">
     <div class="personagem">
-      <img src="/img/img-jogo/glob.png" alt="Glob">
-      <p class="nome">Glob</p>
+      <img src="../img/img-jogo/glob.png" alt="glob">
     </div>
     <div class="texto-pergunta">
-      <p><strong>Essa é a última, vamos!</strong><br>
-      Qual das habilidades a seguir é uma adaptação real dos polvos utilizada principalmente para proteção e camuflagem no ambiente marinho?</p>
+      <h2><strong>Essa é a última, vamos!</strong></h2>
+      <p>Qual das habilidades a seguir é uma adaptação real dos polvos utilizada principalmente para proteção e camuflagem no ambiente marinho?</p>
     </div>
   </div>
 
   <div class="meio">
-    <img src="/img/img-jogo/golfinho solo.png" alt="Golfinho" class="golfinho">
+    <img class="golso" src="/img/img-jogo/golfinho solo.png" alt="Golfinho">
     <div class="opcoes">
-      <button onclick="verificarResposta('A')">A) Capacidade de voar</button>
-      <button onclick="verificarResposta('B')">B) Respiração prolongada fora da água</button>
-      <button onclick="verificarResposta('C')">C) Mudança de cor e textura da pele</button>
-      <button onclick="verificarResposta('D')">D) Emissão de sons complexos para comunicação</button>
+      <button class="bi" onclick="verificarResposta('A')">A) Capacidade de voar</button>
+      <button class="ra" onclick="verificarResposta('B')">B) Respiração prolongada fora da água</button>
+      <button class="esf" onclick="verificarResposta('C')">C) Mudança de cor e textura da pele</button>
+      <button class="esp" onclick="verificarResposta('D')">D) Emissão de sons complexos para comunicação</button>
     </div>
   </div>
 
@@ -32,18 +34,18 @@
     <a href="/jogo/jogo.html" class="sair">Sair do quiz</a>
   </footer>
 
-  <script src="Glob-3.js"></script>
-
-   <!-- POP-UP ERRO -->
-   <div id="popupErro" class="popup-erro">
-    <div class="popup-conteudo">
-      <img src="/img/img-jogo/golfinho solo.png" alt="Golfinho triste" class="golfinho-popup">
-      <h2>Poxa! Você errou!</h2>
-      <p>Eu sei que você consegue!</p>
-      <button onclick="fecharPopup()">Tentar novamente</button>
-    </div>
-  </div>
-
   
+
+ <!-- POP-UP ERRO -->
+ <div id="popupErro" class="popup-erro">
+  <div class="popup-conteudo">
+    <img src="/img/img-jogo/erro.png" alt="Golfinho triste" class="golfinho-popup">
+    <h2>Poxa! Você errou!</h2>
+    <button onclick="fecharPopup()">Tentar novamente</button>
+  </div>
+</div>
+
+
+
 </body>
 </html>

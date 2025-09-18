@@ -3,28 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz Biologia - Pergunta 2</title>
-  <link rel="stylesheet" href="jim-2.css">
+  <link rel="stylesheet" href="./jim-2.css">
+  <title>Quiz Biologia</title>
+
 </head>
+
 <body>
   <div class="topo">
     <div class="personagem">
       <img src="/img/img-jogo/jim.png" alt="Jim">
-      <p class="nome">Jim</p>
     </div>
     <div class="texto-pergunta">
-      <p><strong>Parabéns! Vamos para a próxima.</strong><br>
-      Qual desses animais é um mamífero marinho?</p>
+      <h2><strong>Parabéns! Vamos para a próxima.</strong></h2>
+      <p>Qual desses animais é um mamífero marinho?</p>
     </div>
   </div>
 
   <div class="meio">
-    <img src="/img/img-jogo/golfinho solo.png" alt="Golfinho" class="golfinho">
+    <img class="golso" src="/img/img-jogo/golfinho solo.png" alt="Golfinho" class="golfinho">
     <div class="opcoes">
-      <button onclick="verificarResposta('A')">A) Golfinho</button>
-      <button onclick="verificarResposta('B')">B) Cavalo-marinho</button>
-      <button onclick="verificarResposta('C')">C) Polvo</button>
-      <button onclick="verificarResposta('D')">D) Estrela-do-mar</button>
+      <button class="bi" onclick="verificarResposta('A')">A)  Golfinho</button>
+      <button class="ra" onclick="verificarResposta('B')">B) Cavalo-marinho</button>
+      <button class="esf" onclick="verificarResposta('C')">C)  Polvo</button>
+      <button class="esp" onclick="verificarResposta('D')">D) Estrela-do-ma</button>
     </div>
   </div>
 
@@ -32,28 +33,17 @@
     <a href="/jogo/jogo.html" class="sair">Sair do quiz</a>
   </footer>
 
-  <script src="jim-2.js"></script>
-   
-
-  <!-- POP-UP ERRO -->
- <div id="popupErro" class="popup-erro">
-  <div class="popup-conteudo">
-    <img src="/img/img-jogo/golfinho solo.png" alt="Golfinho triste" class="golfinho-popup">
-    <h2>Poxa! Você errou!</h2>
-    <p>Eu sei que você consegue!</p>
-    <button onclick="fecharPopup()">Tentar novamente</button>
-  </div>
-</div>
+  <script src="/jogo/jim-2.js"></script>
 
  <!-- POP-UP ERRO -->
  <div id="popupErro" class="popup-erro">
   <div class="popup-conteudo">
-    <img src="/img-jogo/golfinho solo.png" alt="Golfinho triste" class="golfinho-popup">
+    <img src="/img/img-jogo/erro.png" alt="Golfinho triste" class="golfinho-popup">
     <h2>Poxa! Você errou!</h2>
-    <p>Eu sei que você consegue!</p>
     <button onclick="fecharPopup()">Tentar novamente</button>
   </div>
 </div>
+
 
 
 </body>

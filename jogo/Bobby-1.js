@@ -3,7 +3,7 @@ function verificarResposta(opcao) {
   // resposta correta = B
   if (opcao === 'B') {
     
-    window.location.href = "Clara-2.html";
+    window.location.href = "Bobby-2.html";
   } else {
     abrirPopupErro();
   }
