@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@
     background-color: #c9ecff;
   }
   
-  /* Topo fixo */
+  
   .topo {
     background-color: #b9e3ff;
     display: flex;
@@ -21,7 +21,7 @@
     align-items: center;
   }
   
-  /* Estrela + nome */
+ 
   .personagem {
     text-align: center;
   }
@@ -87,7 +87,7 @@
     background-color: #aee0ff;
   }
   
-  /* Rodapé */
+  
   footer {
     padding: 15px;
     text-align: left;
@@ -100,7 +100,7 @@
     font-size: 16px;
   }
 
- /* === POPUP ERRO === */
+ 
 .popup-erro {
   display: none; /* começa escondido */
   position: fixed;
